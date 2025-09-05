@@ -4,7 +4,7 @@ import { Screen } from "./components/lib/Screen";
 import { Tab1 } from "./screens/Tab1";
 import { Tab2 } from "./screens/Tab2";
 
-createRoot(document.getElementById("root")!).render(
+createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
       <Route path="/tab1" element={<Screen MainContent={<Tab1 />} />} />

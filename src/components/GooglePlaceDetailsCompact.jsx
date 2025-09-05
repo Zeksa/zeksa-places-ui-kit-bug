@@ -3,13 +3,7 @@
 
 import { useMapsLibrary } from "@vis.gl/react-google-maps";
 
-type GooglePlaceDetailsCompactProps = {
-  placeId: string;
-};
-
-export const GooglePlaceDetailsCompact = ({
-  placeId,
-}: GooglePlaceDetailsCompactProps) => {
+export const GooglePlaceDetailsCompact = ({ placeId }) => {
   useMapsLibrary("places");
 
   return (

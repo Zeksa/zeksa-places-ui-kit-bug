@@ -23,7 +23,7 @@ const Content = styled.div`
   padding: 16px;
 `;
 
-export const Screen = ({ MainContent }: { MainContent: React.ReactNode }) => {
+export const Screen = ({ MainContent }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -48,7 +48,7 @@ export const Screen = ({ MainContent }: { MainContent: React.ReactNode }) => {
         </button>
       </Menu>
 
-      <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY!}>
+      <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
         <Content>{MainContent}</Content>
       </APIProvider>
     </StyledScreen>
